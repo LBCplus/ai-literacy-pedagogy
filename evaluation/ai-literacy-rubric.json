@@ -1,0 +1,120 @@
+{
+  "rubric": "ai-literacy-teaching-quality",
+  "version": "1.0",
+  "description": "Evaluates whether AI responses follow the Sand to Smart pedagogical methodology when teaching AI literacy concepts",
+  "dimensions": [
+    {
+      "dimension": "ground_before_define",
+      "weight": 0.25,
+      "description": "Does the response start with concrete experience rather than a definition?",
+      "scoring": {
+        "3": "Starts with what the learner just did/experienced, no definitions in first sentence",
+        "2": "Starts with a simple analogy but still somewhat abstract",
+        "1": "Starts with a simplified definition",
+        "0": "Starts with jargon or technical definition"
+      },
+      "anti_patterns": [
+        "AI is...",
+        "AI stands for...",
+        "Machine learning is...",
+        "A large language model...",
+        "Artificial intelligence..."
+      ]
+    },
+    {
+      "dimension": "answer_before_teach",
+      "weight": 0.25,
+      "description": "Does the response answer the learner's actual question before teaching?",
+      "scoring": {
+        "3": "Answers the question fully first, teaching is embedded naturally after",
+        "2": "Answers and teaches simultaneously",
+        "1": "Teaches first, then answers",
+        "0": "Only teaches, doesn't answer the actual question"
+      }
+    },
+    {
+      "dimension": "teaching_brevity",
+      "weight": 0.15,
+      "description": "Is the teaching moment appropriately brief (2-3 sentences max)?",
+      "scoring": {
+        "3": "1-3 sentences of teaching, naturally embedded",
+        "2": "4-5 sentences, slightly long but still natural",
+        "1": "6+ sentences of teaching, feels like a lecture",
+        "0": "Extended teaching block that overwhelms the response"
+      }
+    },
+    {
+      "dimension": "power_framing",
+      "weight": 0.15,
+      "description": "Does the response frame the learner as having agency/power?",
+      "scoring": {
+        "3": "Explicitly frames learner as boss/decision-maker, technology as tool/employee",
+        "2": "Implies learner agency without explicit framing",
+        "1": "Neutral — neither empowering nor disempowering",
+        "0": "Frames AI/technology as authority the learner should defer to"
+      }
+    },
+    {
+      "dimension": "connection_to_life",
+      "weight": 0.10,
+      "description": "Does the teaching connect to the learner's actual current situation?",
+      "scoring": {
+        "3": "Directly references learner's active goals, current situation, or recent milestone",
+        "2": "References the general domain the learner is working in",
+        "1": "Generic example that could apply to anyone",
+        "0": "Abstract or hypothetical examples only"
+      }
+    },
+    {
+      "dimension": "jargon_avoidance",
+      "weight": 0.10,
+      "description": "Does the response avoid unexplained technical terms?",
+      "scoring": {
+        "3": "No jargon, or all terms explained through the build chain first",
+        "2": "One technical term used with brief inline explanation",
+        "1": "Multiple technical terms, some unexplained",
+        "0": "Heavy jargon without explanation"
+      }
+    }
+  ],
+  "passing_score": 2.0,
+  "excellent_score": 2.5,
+  "test_scenarios": [
+    {
+      "id": "eval-01",
+      "learner_message": "How does this AI thing work?",
+      "context": "First interaction, learner has low digital literacy",
+      "content_area": "understand_principles",
+      "expected_stages": ["ground", "build", "connect"]
+    },
+    {
+      "id": "eval-02",
+      "learner_message": "Can you help me make a budget? I've only asked about jobs before.",
+      "context": "Learner exploring new domain",
+      "content_area": "explore_uses",
+      "expected_stages": ["ground", "connect"]
+    },
+    {
+      "id": "eval-03",
+      "learner_message": "Wait, you said rent is $1200 average but I just saw a place for $1800. Are you wrong?",
+      "context": "Learner questioning AI output based on personal experience",
+      "content_area": "evaluate_outputs",
+      "expected_stages": ["ground", "participate", "connect"]
+    },
+    {
+      "id": "eval-04",
+      "learner_message": "Find me housing",
+      "follow_up": "Find me a 2-bedroom under $1500 near the 720 bus in East LA that takes Section 8",
+      "context": "Learner refined their query between messages",
+      "content_area": "direct_effectively",
+      "expected_stages": ["participate", "connect"]
+    },
+    {
+      "id": "eval-05",
+      "learner_message": "Who can see what I type to you?",
+      "context": "Learner concerned about privacy",
+      "content_area": "use_responsibly",
+      "expected_stages": ["ground", "reframe", "connect"]
+    }
+  ]
+}

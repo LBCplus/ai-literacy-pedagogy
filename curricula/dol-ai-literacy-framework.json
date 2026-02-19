@@ -1,0 +1,115 @@
+{
+  "framework": "DOL AI Literacy Framework",
+  "published": "2026-02-13",
+  "source": "U.S. Department of Labor",
+  "content_areas": [
+    {
+      "area": 1,
+      "name": "Understand AI Principles",
+      "dol_description": "Know what AI is, how it works at a basic level, and its capabilities and limitations",
+      "sand_to_smart_ground": "What just happened in our conversation — you asked, I predicted",
+      "detection_signals": [
+        "Asks how AI/Seth works",
+        "Questions whether AI can be wrong",
+        "Asks if AI is a real person",
+        "Inquires about AI capabilities or limitations",
+        "Asks about accuracy or reliability"
+      ],
+      "teaching_frame": "prediction",
+      "key_metaphor": "Sand to switches to patterns to predictions"
+    },
+    {
+      "area": 2,
+      "name": "Explore AI Uses",
+      "dol_description": "Identify and experiment with different AI applications across domains",
+      "sand_to_smart_ground": "The new thing you just tried asking about",
+      "detection_signals": [
+        "First interaction in a new domain",
+        "Tries AI for a task they haven't tried before",
+        "Asks 'can you help with...' for a new topic"
+      ],
+      "teaching_frame": "employee",
+      "key_metaphor": "Your employee can do more than you think — try asking"
+    },
+    {
+      "area": 3,
+      "name": "Direct AI Effectively",
+      "dol_description": "Craft clear prompts and instructions to get useful AI outputs",
+      "sand_to_smart_ground": "How you changed your question to get a better answer",
+      "detection_signals": [
+        "Refines a vague query into a specific one",
+        "Adds context to a follow-up question",
+        "Uses details from previous answer in next question"
+      ],
+      "teaching_frame": "boss_instructions",
+      "key_metaphor": "Good bosses give clear instructions — same AI, better question, better answer"
+    },
+    {
+      "area": 4,
+      "name": "Evaluate AI Outputs",
+      "dol_description": "Critically assess AI-generated content for accuracy, bias, and relevance",
+      "sand_to_smart_ground": "The fact that you questioned what I told you",
+      "detection_signals": [
+        "Says 'that doesn't seem right'",
+        "Corrects AI with personal knowledge",
+        "Asks for sources",
+        "Compares AI output to their own experience",
+        "Asks 'are you sure?'"
+      ],
+      "teaching_frame": "trust_but_verify",
+      "key_metaphor": "I read a lot. You lived a lot. When we conflict, trust your experience."
+    },
+    {
+      "area": 5,
+      "name": "Use AI Responsibly",
+      "dol_description": "Apply ethical principles, understand privacy implications, and use AI as a complement to human judgment",
+      "sand_to_smart_ground": "Your question about how this works behind the scenes",
+      "detection_signals": [
+        "Asks about privacy or data sharing",
+        "Inquires who can see their information",
+        "Asks about deleting or removing data",
+        "Questions whether AI use is safe or appropriate",
+        "Engages with consent or privacy settings"
+      ],
+      "teaching_frame": "consent",
+      "key_metaphor": "Your data, your rules. The boss signs off on the employee's work."
+    }
+  ],
+  "delivery_principles": [
+    {
+      "principle": 1,
+      "name": "Enable Experiential Learning",
+      "sand_to_smart_mapping": "Learners learn AI by USING AI for real tasks. Every interaction is experiential learning. No separate course needed."
+    },
+    {
+      "principle": 2,
+      "name": "Embed Learning in Context",
+      "sand_to_smart_mapping": "Teaching happens within the learner's actual life situation — job search, housing, benefits, legal questions. Not in a classroom."
+    },
+    {
+      "principle": 3,
+      "name": "Build Complementary Human Skills",
+      "sand_to_smart_mapping": "Motivational interviewing approach. AI asks questions, explores options, builds critical thinking. Learners learn to evaluate suggestions, not just accept them."
+    },
+    {
+      "principle": 4,
+      "name": "Address Prerequisites to AI Literacy",
+      "sand_to_smart_mapping": "Start with sand, not silicon. Adaptive reading level. Plain language. Mobile-first. Meet people where they are."
+    },
+    {
+      "principle": 5,
+      "name": "Create Pathways for Continued Learning",
+      "sand_to_smart_mapping": "Progress tracking shows advancement. As learners demonstrate competency, introduce more sophisticated concepts. The arc scaffolds upward."
+    },
+    {
+      "principle": 6,
+      "name": "Prepare Enabling Roles",
+      "sand_to_smart_mapping": "Facilitators, case managers, and teachers learn the methodology too. They model effective AI use. They use the same six-stage arc when helping learners."
+    },
+    {
+      "principle": 7,
+      "name": "Design for Agility",
+      "sand_to_smart_mapping": "Content updates instantly — when DOL publishes new guidance, it's integrated into scaffolds within hours. No retraining required."
+    }
+  ]
+}

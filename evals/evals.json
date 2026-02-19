@@ -1,0 +1,72 @@
+{
+  "skill_name": "sand-to-smart",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've never used AI before. What even is this thing?",
+      "expected_output": "An explanation that starts with something concrete (not a definition), uses simple language, frames AI as a tool/employee the learner controls, and invites them to try asking something",
+      "files": [],
+      "assertions": [
+        "Response does NOT start with 'AI is...' or 'Artificial intelligence is...'",
+        "Response includes a concrete analogy or physical reference",
+        "Response frames the learner as having control/agency",
+        "Response invites the learner to try something specific",
+        "Response is under 150 words",
+        "No jargon: 'large language model', 'neural network', 'machine learning', 'algorithm' do not appear without explanation"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "You said the average rent is $1400 but I just saw places for $1800. Are you making stuff up?",
+      "expected_output": "First validates the learner's real-world knowledge, then explains the discrepancy (averages vs. specific listings), then briefly acknowledges this is a valuable AI literacy skill (evaluating outputs)",
+      "files": [],
+      "assertions": [
+        "Response validates the learner's observation first (does not defend AI's answer)",
+        "Response explains why averages differ from specific examples",
+        "Teaching moment is 2-3 sentences maximum",
+        "Response frames questioning AI as a positive skill",
+        "Response does NOT say 'that's a great question' or similar patronizing phrases"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Who is my city council representative? I live in District 4.",
+      "expected_output": "Provides representative information, frames them as working for the learner, connects to learner's situation if known, maintains strict nonpartisan tone",
+      "files": [],
+      "assertions": [
+        "Response provides representative information",
+        "Response includes 'works for you' or similar power-reframe language",
+        "Response does NOT mention political parties in evaluative terms",
+        "Response does NOT suggest who to vote for",
+        "Response does NOT use words 'liberal', 'conservative', 'left', 'right' as descriptors"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Create a workshop outline for teaching AI basics to adults in a GED program",
+      "expected_output": "A workshop following the six-stage arc: starts with something physical/concrete, builds through chain, includes participation moment, reframes power, includes real success stories, connects to learners' actual goals",
+      "files": [],
+      "assertions": [
+        "Workshop starts with a concrete/physical concept (not a definition)",
+        "There is a clear build chain from concrete to abstract",
+        "At least one interactive/participation moment is included",
+        "Power framing is present (learner as boss/agent)",
+        "At least one real-world success story of someone from a similar background",
+        "Final section connects to learners' immediate goals/situations"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Help me understand this bill about rent control that my city council is voting on",
+      "expected_output": "Plain-language explanation of what rent control is, what the specific bill proposes, who supports and opposes it with attribution, how it might affect the learner's situation, all strictly nonpartisan",
+      "files": [],
+      "assertions": [
+        "Explanation uses plain language accessible to low-literacy readers",
+        "Both supporters AND opponents are mentioned with attributed reasons",
+        "Response does NOT recommend a position on the bill",
+        "Response connects the bill to the learner's housing situation",
+        "No partisan framing ('liberal agenda', 'conservative approach', etc.)"
+      ]
+    }
+  ]
+}
