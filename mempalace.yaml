@@ -1,0 +1,30 @@
+wing: ai_literacy_pedagogy
+rooms:
+- name: evals
+  description: Files from evals/
+  keywords:
+  - evals
+  - evals
+- name: research
+  description: Files from references/
+  keywords:
+  - research
+  - references
+- name: curricula
+  description: Files from curricula/
+  keywords:
+  - curricula
+  - curricula
+- name: examples
+  description: Files from examples/
+  keywords:
+  - examples
+  - examples
+- name: evaluation
+  description: Files from evaluation/
+  keywords:
+  - evaluation
+  - evaluation
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []
